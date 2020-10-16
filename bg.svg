@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+      width="220px" height="370px" >
+
+    <rect fill="url(#grad1)" width="1000px" height="700px"/>
+    <!--defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color: #DDA0DD; stop-opacity: 1" />
+            <stop offset="100%" style="stop-color: #FF6347; stop-opacity: 1" />
+        </linearGradient>
+    </defs-->
+
+    <g filter="url(#shadow-circle)">
+        <circle r="50px" cx="60px" cy="80px" fill="#E6E6FA" stroke="#DA70D6" stroke-width="2px" />
+        <circle r="40px" cx="110px" cy="160px" fill="#D8BFD8" stroke="#EE82EE" stroke-width="2px" />
+        <circle r="30px" cx="140px" cy="230px" fill="#DDA0DD" stroke="#DDA0DD" stroke-width="2px" />
+        <circle r="20px" cx="140px" cy="285px" fill="#EE82EE" stroke="#D8BFD8" stroke-width="2px" />
+        <circle r="10px" cx="120px" cy="315px" fill="#DA70D6" stroke="#E6E6FA" stroke-width="2px" />
+     </g>
+
+    <!--g filter="url(#shadow-circle)">
+        <circle r="10px" cx="870px" cy="245px" fill="#DA70D6" stroke="#E6E6FA" stroke-width="2px" />
+        <circle r="20px" cx="850px" cy="275px" fill="#EE82EE" stroke="#D8BFD8" stroke-width="2px" />
+        <circle r="30px" cx="840px" cy="330px" fill="#DDA0DD" stroke="#DDA0DD" stroke-width="2px" />
+        <circle r="40px" cx="870px" cy="400px" fill="#D8BFD8" stroke="#EE82EE" stroke-width="2px" />
+        <circle r="50px" cx="920px" cy="480px" fill="#E6E6FA" stroke="#DA70D6" stroke-width="2px" />
+    </g-->
+    <defs>
+        <filter id="shadow-circle" x="0" y="0" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+            <feColorMatrix result="matrixOut" in="offOut" type="matrix"
+                           values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" />
+            <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+    </defs>
+    <text x="14" y="85" class="result">My_Results</text>
+    <style>
+        .result { font: italic 20px serif; fill: #483D8B; }
+    </style>
+</svg>

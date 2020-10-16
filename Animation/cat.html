@@ -1,0 +1,160 @@
+git<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat</title>
+</head>
+<body>
+<body>
+<style>
+    body {
+        background: linear-gradient(90deg, #ffd8bd, #ff7f24);
+    }
+    .cat {
+        --cats-color: #bd4f00;
+        --cats-belly: #faf2e8;
+
+        margin: auto;
+        display: block;
+        margin-top: 5%;
+        width: 300px;
+        height: 300px;
+        position: relative;
+    }
+    .right-ear {
+        background: black;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 30px;
+        left: 124px;
+        transform: rotate(-60deg);
+    }
+
+    .left-ear {
+        background: black;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 30px;
+        left: 165px;
+        transform: rotate(60deg);
+
+    }
+    .cats-head {
+        background: repeating-linear-gradient(
+                45deg,
+                #bd4f00 0px,
+                #bd4f00 20px,
+                black 30px,
+                black 60px);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: absolute;
+        top: 40px;
+        left: 100px;
+
+    }
+    .cats-body {
+        background: repeating-linear-gradient(
+                45deg,
+                #bd4f00 0px,
+                #bd4f00 20px,
+                black 30px,
+                black 60px);
+
+        width: 170px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        left: 140px;
+        top: 110px;
+
+    }
+    .cats-tail {
+        background: repeating-linear-gradient(
+                45deg,
+                #bd4f00 0px,
+                #bd4f00 20px,
+                black 30px,
+                black 60px);
+        width: 200px;
+        height: 30px;
+        position: absolute;
+        left: 205px;
+        top: 260px;
+        border-radius: 40%;
+        z-index: -1;
+        animation-duration: 5s;
+        animation-name: tail;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        transform-origin: 0% 0%;
+    }
+    @keyframes tail {
+        10% {
+            transform: rotate(-10deg);
+        }
+        20% {
+            transform: rotate(0deg);
+        }
+        30% {
+            transform: rotate(10deg);
+        }
+        40% {
+            transform: rotate(10deg);
+        }
+
+    }
+    .cats-left-up-paw {
+        position: absolute;
+        left: 120px;
+        top: 170px;
+        width: 25px;
+        height: 60px;
+        background: repeating-linear-gradient(
+                0deg,
+                #bd4f00 0px,
+                #bd4f00 20px,
+                black 30px,
+                black 60px);
+        border-radius: 40%;
+        transform: rotate(80deg);
+    }
+    .cats-left-down-paw {
+        position: absolute;
+        left: 160px;
+        top: 270px;
+        width: 30px;
+        height: 60px;
+        background: repeating-linear-gradient(
+                0deg,
+                #bd4f00 0px,
+                #bd4f00 20px,
+                black 30px,
+                black 60px);
+        border-radius: 40%;
+        transform: rotate(80deg);
+    }
+
+</style>
+<div class="cat">
+    <div class="cats-top">
+        <div class="right-ear">.</div>
+        <div class="left-ear">.</div>
+        <div class="cats-head"></div>
+
+    </div>
+    <div class="cats-bottom">
+        <div class="cats-body"></div>
+        <div class="cats-left-up-paw"></div>
+        <div class="cats-left-down-paw"></div>
+        <div class="cats-tail"></div>
+    </div>
+</div>
+
+</body>
+
+</body>
+</html>

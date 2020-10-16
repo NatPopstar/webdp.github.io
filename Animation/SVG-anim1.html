@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG-ANIMATION</title>
+    <script src="//cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
+</head>
+<body>
+<object id="my-svg" data="svg-anim1.svg" type="image/svg+xml"></object>
+<button id="btn">Animate</button>
+<script>
+    btn.addEventListener('click', () => {
+        new Vivus("my-svg", {duration: 100});
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+        width="70px" height="70px">
+
+    <circle r="35" cx="35" cy="35" fill="#4682B4"/>
+    <text x="30px" y="46px" id="fb" fill="#fff"> f </text>>
+    <style>
+        #fb {
+        font: bold 35px sans-serif;
+        }
+    </style>
+</svg>
